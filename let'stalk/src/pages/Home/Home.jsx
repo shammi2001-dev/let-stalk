@@ -20,7 +20,7 @@ const Home = () => {
   }
 });
 
-  return (
+  return(
     <div>
       {
         verify?
@@ -30,7 +30,7 @@ const Home = () => {
           <div className='bg-white rounded p-10'>
            <h1 className='font-sans font-bold text-[34px] text-[#11175D]'>PLEASE VERIFY YOUR EMAIL</h1>
            <button className='font-nun font-semibold text-[20px] text-white bg-primary px-10 py-4 rounded ml-[100px] mt-[20px]'>
-          <Link to='/login'>  BACK TO LOGIN </Link></button>
+          <Link to='/login'>  BACK LOGIN </Link></button>
            </div>
         </div>
       }
