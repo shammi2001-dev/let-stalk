@@ -16,6 +16,10 @@ import store from './store.jsx';
 import { Provider } from 'react-redux';
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <Home></Home>,
+  },
+  {
     path: "/registration",
     element: <Registration></Registration>,
   },
@@ -31,6 +35,7 @@ const router = createBrowserRouter([
     path: "/forgotPassword",
     element: <ForgotPassword></ForgotPassword>,
   },
+ 
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

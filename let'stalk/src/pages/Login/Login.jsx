@@ -56,8 +56,8 @@ if(email && password && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(ema
   .then((user) => {
     toast.success('Login successfull');
     console.log(user.user)
-    dispatch(userLoginInfo(user.user));
-    localStorage.setItem('userLoginInfo',JSON.stringify(userLoginInfo(user.user)))
+    dispatch(userLoginInfo(user));
+    localStorage.setItem('userLoginInfo',JSON.stringify((user)))
     setError('');
     setTimeout(()=>{
     Navigate('/home')
